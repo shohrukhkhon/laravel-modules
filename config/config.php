@@ -52,8 +52,6 @@ return [
                 'LOWER_NAME',
                 'STUDLY_NAME',
                 'VENDOR',
-                'AUTHOR_NAME',
-                'AUTHOR_EMAIL',
                 'MODULE_NAMESPACE',
                 'PROVIDER_NAMESPACE',
             ],
@@ -112,9 +110,9 @@ return [
             'filter' => ['path' => 'Http/Middleware', 'generate' => true],
             'request' => ['path' => 'Http/Requests', 'generate' => true],
             'provider' => ['path' => 'Providers', 'generate' => true],
-            'assets' => ['path' => 'Resources/assets', 'generate' => true],
-            'lang' => ['path' => 'Resources/lang', 'generate' => true],
-            'views' => ['path' => 'Resources/views', 'generate' => true],
+            'assets' => ['path' => 'Resources/assets', 'generate' => false],
+            'lang' => ['path' => 'Resources/lang', 'generate' => false],
+            'views' => ['path' => 'Resources/views', 'generate' => false],
             'test' => ['path' => 'Tests/Unit', 'generate' => true],
             'test-feature' => ['path' => 'Tests/Feature', 'generate' => true],
             'repository' => ['path' => 'Repositories', 'generate' => false],
@@ -215,10 +213,6 @@ return [
 
     'composer' => [
         'vendor' => 'nwidart',
-        'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
-        ],
         'composer-output' => false,
     ],
 
