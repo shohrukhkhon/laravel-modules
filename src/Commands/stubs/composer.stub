@@ -1,12 +1,6 @@
 {
     "name": "$VENDOR$/$LOWER_NAME$",
     "description": "",
-    "authors": [
-        {
-            "name": "$AUTHOR_NAME$",
-            "email": "$AUTHOR_EMAIL$"
-        }
-    ],
     "extra": {
         "laravel": {
             "providers": [],
